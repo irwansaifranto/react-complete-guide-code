@@ -4,6 +4,7 @@
 
 # dependencies
 /node_modules
+/code/react-vs-vanilla-js-example
 /.pnp
 .pnp.js
 
