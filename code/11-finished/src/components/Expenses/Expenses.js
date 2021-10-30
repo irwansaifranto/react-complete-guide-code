@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import ExpenseItem from './ExpenseItem';
-import Card from '../UI/Card';
-import './Expenses.css';
+import ExpenseItem from "./ExpenseItem";
+import Card from "../UI/Card";
+import "./Expenses.css";
 
 const Expenses = (props) => {
+  const RandomValue = () => alert("Yes I am ....");
+
   return (
     <Card className="expenses">
       <ExpenseItem
@@ -27,8 +29,11 @@ const Expenses = (props) => {
         amount={props.items[3].amount}
         date={props.items[3].date}
       />
+      <div onClick={RandomValue} style={{ color: "red", cursor: "pointer" }}>
+        Tes Click !!!
+      </div>
     </Card>
   );
-}
+};
 
 export default Expenses;

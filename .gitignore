@@ -25,3 +25,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 code/02-building-a-first-custom-component
+code/11-finished/node_modules
+code/11-finished/.eslintcache
+code/11-finished/package-lock.json
+
