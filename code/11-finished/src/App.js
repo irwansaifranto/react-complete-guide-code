@@ -1,7 +1,8 @@
 import React from "react";
 
 import Expenses from "./components/Expenses/Expenses";
-import Clock from "./components/Clock/Clock";
+import Clock from "./components/State/Clock";
+import { Toggle } from "./components/Event/Toggle";
 
 const App = () => {
   const expenses = [
@@ -38,6 +39,7 @@ const App = () => {
       <h2>Let's get started!</h2>
       <Expenses items={expenses} />
       <Clock />
+      <Toggle />
     </div>
   );
 };

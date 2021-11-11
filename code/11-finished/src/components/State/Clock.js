@@ -1,20 +1,21 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
 class Clock extends React.Component {
   constructor(props) {
     super(props);
-    this.text = "Hello, world!";
+    this.text = "State and Lifecycle.";
     this.state = { date: new Date() }; // The only place where you can assign this.state is the constructor.
   }
 
   componentDidMount() {
     this.timerID = setInterval(() => this.tick(), 1000);
-    console.log(ReactDOM.findDOMNode(this));
+    // console.log(ReactDOM.findDOMNode(this));
   }
 
   componentWillUnmount() {
-    console.log("Component Will Unmount.");
+    clearInterval(this.timerID);
+    // console.log("Component Will Unmount.");
   }
 
   tick() {
